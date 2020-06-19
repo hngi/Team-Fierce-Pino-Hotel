@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- Bootstrap 4 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -> Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Exernal CSS -->
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <!-- Banner Section -->
+    <div class="banner text-center text-white">
+      <h2 class="banner__title">Contact Us</h2>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact mb-5">
+      <div class="container bg-white">
+        <div class="row px-5 py-1">
+          <div class="col-md-6">
+            <h3 class="contact__title">Get In Touch</h3>
+            <p class="contact__description">
+              No matter where you are living the moment, we are always available
+              to take you in , we are here for you. Accessibility is what we are
+              known for. Let’s show you how.
+            </p>
+          </div>
+        </div>
+        <div class="row px-5 py-2">
+          <!-- Contact Description -->
+          <div class="col-md-6">
+            <h3 class="contact__title-xl">
+              Looking For Us? Find Us From Anywhere
+            </h3>
+            <form action="" class="contact__form-search">
+              <div class="form-group">
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  class="form-control"
+                  required
+                  placeholder="Your Address"
+                />
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary contact__btn px-4">
+                  Find Us
+                </button>
+              </div>
+            </form>
+
+            <img
+              src="./img/contact/map.svg"
+              alt="Map"
+              class="contact__map img-fluid"
+            />
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <form action="" class="contact__form">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="currentAddress">Current Address</label>
+                <input
+                  type="text"
+                  name="currentAddress"
+                  id="currentAddress"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <div class="row text-center">
+                  <div class="col-md-4 mx-auto">
+                    <button
+                      type="submit"
+                      class="btn btn-primary contact__btn px-4"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
