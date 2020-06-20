@@ -1,136 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <!-- Bootstrap 4 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
 
-    <!-- Google Font -> Roboto -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <!-- Bootstrap 4 CDN -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous" />
 
-    <!-- Exernal CSS -->
-    <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- Banner Section -->
-    <div class="banner text-center text-white">
-      <h2 class="banner__title">Contact Us</h2>
+  <!-- Google Font -> Roboto -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Exernal CSS -->
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar starts here -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container py-md-3">
+      <a class="navbar-brand" href="#"><img src="./img/pinoHotels.png" alt="" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">THE HOTEL<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">ACCOMODATION</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">SPECIAL OFFERS</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">BLOG</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#"><img src="./img/icons8-hot-line-24.png" alt="phone number"> +234 805 678 9000</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-- Navbar ends here -->
+  <!-- Banner Section -->
+  <div class="banner text-center text-white">
+    <h2 class="banner__title">Contact Us</h2>
+  </div>
 
-    <!-- Contact Us Section -->
-    <div class="contact mb-5">
-      <div class="container bg-white">
-        <div class="row px-5 py-1">
-          <div class="col-md-6">
-            <h3 class="contact__title">Get In Touch</h3>
-            <p class="contact__description">
-              No matter where you are living the moment, we are always available
-              to take you in , we are here for you. Accessibility is what we are
-              known for. Let’s show you how.
-            </p>
-          </div>
+  <!-- Contact Us Section -->
+  <div class="contact mb-5">
+    <div class="container bg-white">
+      <div class="row px-5 py-1">
+        <div class="col-md-6">
+          <h3 class="contact__title">Get In Touch</h3>
+          <p class="contact__description">
+            No matter where you are living the moment, we are always available
+            to take you in , we are here for you. Accessibility is what we are
+            known for. Let’s show you how.
+          </p>
         </div>
-        <div class="row px-5 py-2">
-          <!-- Contact Description -->
-          <div class="col-md-6">
-            <h3 class="contact__title-xl">
-              Looking For Us? Find Us From Anywhere
-            </h3>
-            <form action="" class="contact__form-search">
-              <div class="form-group">
-                <input
-                  type="search"
-                  name="search"
-                  id="search"
-                  class="form-control"
-                  required
-                  placeholder="Your Address"
-                />
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary contact__btn px-4">
-                  Find Us
-                </button>
-              </div>
-            </form>
+      </div>
+      <div class="row px-5 py-2">
+        <!-- Contact Description -->
+        <div class="col-md-6">
+          <h3 class="contact__title-xl">
+            Looking For Us? Find Us From Anywhere
+          </h3>
+          <form action="" class="contact__form-search">
+            <div class="form-group">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                class="form-control"
+                required
+                placeholder="Your Address" />
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary contact__btn px-4">
+                Find Us
+              </button>
+            </div>
+          </form>
 
-            <img
-              src="./img/contact/map.svg"
-              alt="Map"
-              class="contact__map img-fluid"
-            />
-          </div>
+          <img
+            src="./img/contact/map.svg"
+            alt="Map"
+            class="contact__map img-fluid" />
+        </div>
 
-          <!-- Contact Form -->
-          <div class="col-md-6">
-            <form action="" class="contact__form">
-              <div class="form-group">
-                <label for="fullName">Full Name</label>
-                <input
-                  type="text"
-                  name="fullName"
-                  id="fullName"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="currentAddress">Current Address</label>
-                <input
-                  type="text"
-                  name="currentAddress"
-                  id="currentAddress"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="5"
-                  class="form-control"
-                  required
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <div class="row text-center">
-                  <div class="col-md-4 mx-auto">
-                    <button
-                      type="submit"
-                      class="btn btn-primary contact__btn px-4"
-                    >
-                      Submit
-                    </button>
-                  </div>
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <form action="" class="contact__form">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                class="form-control"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="currentAddress">Current Address</label>
+              <input
+                type="text"
+                name="currentAddress"
+                id="currentAddress"
+                class="form-control"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                class="form-control"
+                required></textarea>
+            </div>
+            <div class="form-group">
+              <div class="row text-center">
+                <div class="col-md-4 mx-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary contact__btn px-4">
+                    Submit
+                  </button>
                 </div>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 my-md-3 my-2 text-center">
+          <h5>NEWS AND OFFERS</h5>
+        </div>
+        <div class="col-md-4">
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-8 my-md-3 my-1 form-email-input">
+                <label class="sr-only" for="inlineFormInputName">Name</label>
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Your Email Address">
+              </div>
+              <div class="col-4 my-md-3 my-1 ml-auto">
+                <button type="submit" class="btn btn-primary" id="btn-subscribe">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-6 col-md-3 my-md-3 my-1">
+          <p>KEEP IN TOUCH</p>
+        </div>
+        <div class="col-6 col-md-3 my-md-3 my-1 logos">
+          <ul class="list-group list-group-horizontal">
+            <i><a href="www.facebook.com" target="_blank"><img src="./img/icons8-facebook-f.svg" alt="facebook logo"></a> </i>
+            <i><a href="www.instagram.com"><img src="./img/icons8-instagram.svg" alt="instagram logo"></a> </i>
+            <i><a href="www.twitter.com"><img src="./img/icons8-twitter.svg" alt="twitter logo"></a></i>
+            <i><a href="www.linkedin.com"><img src="./img/icons8-linkedin.svg" alt="linkedin logo"></a></i>
+            <i><a href="www.youtube.com"><img src="./img/icons8-play-button.svg" alt="youtube logo"></a></i>
+            <!-- <i><a href="www.facebook.com"><img src="./img/icons8-facebook-messenger.svg" alt="facebook messenger logo"></a></i> -->
+
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="row">
+        <div class="col-md-3 col-6 mb-3 ml-auto mr-auto">
+          <img src="./img/pinofooterlogo.png" alt="footer logo">
+        </div>
+        <div class="col-md-3 mb-3">
+          <p id="address">Plot 32, Jogunomi street, PMB 22113 <br>Gbagada, Lagos <br>+234 805 678 9000 <br>reservations@pinahotels.com </p>
+        </div>
+        <div class="col-md-3 col-6">
+          <p><strong>PAGE SITE</strong></p>
+          <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Accomodation</a></li>
+            <li><a href="">Dining</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <p><strong>HOT LINKS</strong></p>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Vision & Mision</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Our Values</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="row">
+        <div class="col-6 text-center ml-auto mr-auto mb-3">
+          <p>Copyright (c) 2020 Pino Hotels</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
