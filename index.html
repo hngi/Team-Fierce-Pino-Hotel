@@ -1,32 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PINO | The Hotel </title>
-    <!-- Bootstrap 4 CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
 
-    <!-- Google Font -> Roboto -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pino | Special Offers</title>
 
-    <!-- Exernal CSS -->
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- EDIT HEADER HERE -->
-    
-    <!-- MAIN -->
-    
-    <!-- EDIT FOOTER HERE -->
-  </body>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <!-- font awesome cdn  -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="offer.css">
+
+  <!-- stylesheet  -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar starts here -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container py-md-3">
+      <a class="navbar-brand" href="#"><img src="./img/pinoHotels.png" alt="" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">THE HOTEL<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">ACCOMODATION</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">SPECIAL OFFERS</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">BLOG</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item ml-lg-2 ml-auto mr-auto">
+            <a class="nav-link nav-font" href="#"><img src="./img/icons8-hot-line-24.png" alt="phone number"> +234 805 678 9000</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar ends here -->
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-8 ml-auto mr-auto header-info">
+          <!-- header-info -->
+          <h1 class="text-center">PINO HOTELS</h1>
+          <hr class="header-hr" />
+          <p class="text-center slogan">THE TRUE ESSENCE OF BEAUTIFUL</p>
+          <p class="text-center appeal">Spend an amazing time in <br> a place in the palms</p>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+  <!-- Header end -->
+  <!-- Main -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 my-md-3 my-2 text-center">
+          <h5>NEWS AND OFFERS</h5>
+        </div>
+        <div class="col-md-4">
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-8 my-md-3 my-1 form-email-input">
+                <label class="sr-only" for="inlineFormInputName">Name</label>
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Your Email Address">
+              </div>
+              <div class="col-4 my-md-3 my-1 ml-auto">
+                <button type="submit" class="btn btn-primary" id="btn-subscribe">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-6 col-md-3 my-md-3 my-1">
+          <p>KEEP IN TOUCH</p>
+        </div>
+        <div class="col-6 col-md-3 my-md-3 my-1 logos">
+          <ul class="list-group list-group-horizontal">
+            <i><a href="www.facebook.com" target="_blank"><img src="./img/icons8-facebook-f.svg" alt="facebook logo"></a> </i>
+            <i><a href="www.instagram.com"><img src="./img/icons8-instagram.svg" alt="instagram logo"></a> </i>
+            <i><a href="www.twitter.com"><img src="./img/icons8-twitter.svg" alt="twitter logo"></a></i>
+            <i><a href="www.linkedin.com"><img src="./img/icons8-linkedin.svg" alt="linkedin logo"></a></i>
+            <i><a href="www.youtube.com"><img src="./img/icons8-play-button.svg" alt="youtube logo"></a></i>
+            <!-- <i><a href="www.facebook.com"><img src="./img/icons8-facebook-messenger.svg" alt="facebook messenger logo"></a></i> -->
+
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="row">
+        <div class="col-md-3 col-6 mb-3 ml-auto mr-auto">
+          <img src="./img/pinofooterlogo.png" alt="footer logo">
+        </div>
+        <div class="col-md-3 mb-3">
+          <p id="address">Plot 32, Jogunomi street, PMB 22113 <br>Gbagada, Lagos <br>+234 805 678 9000 <br>reservations@pinahotels.com </p>
+        </div>
+        <div class="col-md-3 col-6">
+          <p><strong>PAGE SITE</strong></p>
+          <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Accomodation</a></li>
+            <li><a href="">Dining</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <p><strong>HOT LINKS</strong></p>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Vision & Mision</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Our Values</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="row">
+        <div class="col-6 text-center ml-auto mr-auto mb-3">
+          <p>Copyright (c) 2020 Pino Hotels</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
