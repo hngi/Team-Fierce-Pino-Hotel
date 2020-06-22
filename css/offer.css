@@ -1,1 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bx-color {
+  margin-left: 25%;
+}
+
+.bx-color .nav-item .nav-link {
+  color: #313A59;
+  margin-left: 25px;
+}
+
+.navbar-brand img {
+  margin-left: 30px;
+}
+
+header {
+  background: url(../img/offer/image.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  height: auto !important;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.pad {
+  padding-top: 10vh;
+}
+
+.fx-bold {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.fx-top {
+  margin-top: 20px;
+}
+
+.fx-size {
+  font-weight: 400;
+  font-size: 37px;
+}
+
+.fx-top .fx-btn {
+  padding: 1% 5%;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: .4s ease;
+}
+
+.fx-bot {
+  margin: 20px;
+}
+
+.dd {
+  height: 6rem;
+}
+
+.fx-fix {
+  position: absolute;
+  background: #fff;
+  color: #000;
+  border: 1.5px solid #EEEEEE;
+  margin-left: 12.5%;
+  padding: 10px 0;
+  transform: translateY(-30px);
+}
+
+.fx-bug .nav-item .nav-link {
+  background: #313A59;
+  margin: 0 10px 5px;
+}
+
+label span {
+  margin: 5px 1px 5px 10px;
+}
+
+.fx-word {
+  font-size: 20px;
+}
+
+hgroup h1 {
+  font-size: 50px;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-85 h1:before, 
+.w-85 h1:after {
+  content: '';
+  height: 6px;
+  border-radius: 50px;
+  width: 30%;
+  background: #313A59;
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+  transform: translateY(-10px);
+}
+
+.fx-locate .fx-h3 {
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 4px solid #313A59;
+}
+
+.fx-locate .fx-pad {
+  margin: 0 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #000;
+}
+
+.fx-locate .fx-pad .t-1 i{
+  padding-left: 10%;
+}
+
+.fx-bland {
+  color: yellow !important;
+  background: #bdbdbd;
+}
+
+.bx-top {
+  clear: both;
+  margin-top: 50px;
+}
+
+.fx-h4 {
+  font-weight: 550;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex-basis: 49%;
+}
+
+.fx-color {
+  color: #fff !important;
+  background: #313A59;
+  transition: .4s ease;
+}
+
+.bd-highlight {
+  padding-right: 20px;
+}
+
+.bx-border {
+  box-shadow: 10px 10px 6px #bdbdbd;
+}
+
+
+/* Buttons */
+
+.bx-btn {
+  padding: .2% 2%;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  margin: 0 2%;
+}
+
+.bx-top .fx-btn {
+  padding: .5rem 1rem;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  transition: .4s ease;
+}
+    /* Hover effect for buttons */
+.fx-btn:hover {
+  color: #fff;
+  background: #313A59;
+}
+.fx-color:hover {
+  color: #313A59 !important;
+  background: #fff;
+}
+
+/* /Buttons */
+
+.bx-btn i {
+  padding-left: 6px;
+}
+
+.point {
+  cursor: pointer; /* For clickable items */
+}
+
+.padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Media Query */
+
+/* Screen  768px to Screen 481px */
+@media only screen and (max-width: 768px){
+  .flex-container {
+    flex-direction: column;
+  }
+  .padding {
+    width: 90% !important;
+    margin: auto;
+  }
+  .bx-border {
+    border-radius: 15px !important;
+    box-shadow: 1px 10px 10px #bdbdbd;
+  }
+  .h-20 {
+    height: 20px;
+  }
+  .bx-top .fx-btn {
+    padding: .5rem;
+  }
+  .pad {
+    width: 80%;
+    margin: auto;
+  }  
+  .w-85 h1:after {
+    width: 75%;
+  }
+}
+
+/* Screen  480px and Below */
+@media only screen and (max-width: 480px){
+  .bx-top .fx-btn {
+    padding: .2rem .5rem;
+    color: #000;
+    text-decoration: none;
+  }
+  .fx-bot {
+    margin: 5px;
+  }
+  .fx-top .fx-btn {
+    padding: .2rem .5rem;
+  }
+  header {
+    margin-bottom: 5rem;
+  }
+  .fx-locate .fx-pad {
+    padding-top: 10px;
+  }
+}
 
