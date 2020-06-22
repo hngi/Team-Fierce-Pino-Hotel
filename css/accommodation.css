@@ -1,1 +1,133 @@
+body,p,h1,h2,h3,h4,div{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/* HEAD */
+.header{
+    background: url(/img/accommodation/deluxe-platinum-room-hard-rock-hotel-cancun\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+}
+.header-filter{
+    background: rgba(0, 0, 0, 0.45);
+}
+.header-content{
+    margin: auto;
+    width: 50%;
+    padding: 16% 0;
+    text-align: center;
+    color: white;
+}
+.header-main{
+    font-weight: 500;
+    font-size: 4.3125rem;
+}
+.header-subtext{
+    font-weight: normal;
+    font-size: 2rem;
+}
 
+/* MAIN CONTENT */
+.main-content{
+    background: url(/img/accommodation/Rectangle\ 77.svg);
+    background-size: 118% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+    padding-top: 50%;
+    padding-bottom: 70px;
+    margin-bottom: 30px;
+}
+.room-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 75px;
+    padding:110px 70px 90px;
+    position: relative;
+}
+.rooms1,.rooms2,.rooms3,.rooms4,.rooms5,.rooms6,.rooms7,.rooms8,.rooms9{
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 26px rgba(49, 58, 89, 0.2);
+}
+.room-img1,.room-img2,.room-img3,.room-img4,.room-img5,.room-img6,.room-img7,.room-img8,.room-img9{
+    background: url(/img/accommodation/1:1.png);
+    background-size: 100.3%;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+.room-img:hover .book{
+    visibility: visible;
+}
+.room-img:hover{
+    background: url(/img/accommodation/1:1.png) rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    background-size:cover;
+    text-decoration: none;
+}
+.book{
+    margin: auto;
+    width: 50%;
+    padding: 55% 0 9.4%;
+    text-align: center;
+    visibility: hidden;
+}
+.book-content{
+    color: white;
+    background: #262F56;
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 22px;
+    font-weight: 500px;
+}
+.room-content{
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    color: #171717;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 40px;
+}
+.room-spec{
+    margin-right: auto;
+}
+.room-name{
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+.room-width,.room-type,.price-fig{
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+.more{
+    background: #262F56;
+    border-radius: 10px;
+    border: none;
+    padding: 1.25rem 2.5rem;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:1001px){
+    .header{
+        position: static;
+    }
+    .main-content{
+        background-size: cover;
+        padding-top: 5%;
+    }
+    .room-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .rooms7,.rooms8,.rooms9{
+        display: none;
+    }
+}

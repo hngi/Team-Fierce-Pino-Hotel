@@ -1,143 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PINO | Accommodations</title>
+    <!-- Bootstrap 4 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PINO | Accommodations</title>
-  <!-- Bootstrap 4 CDN -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous" />
+    <!-- Google Font -> Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Font -> Roboto -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet" />
+    <!-- Exernal CSS -->
+    <link rel="stylesheet" href="./css/accommodation.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <!-- Exernal CSS -->
-  <link rel="stylesheet" href="./css/accommodation.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <!-- HEADER -->
+    <!-- Navbar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container py-md-3">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/pinoHotels.png" alt="" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <!-- HEADER -->
-  <!-- Navbar starts here -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container py-md-3">
-      <a class="navbar-brand" href="#"><img src="./img/pinoHotels.png" alt="" class="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav-item active ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#"
+                >THE HOTEL<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#">ACCOMODATION</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#">SPECIAL OFFERS</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#">BLOG</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#">CONTACT US</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#"
+                ><img src="./img/icons8-hot-line-24.png" alt="phone number" />
+                +234 805 678 9000</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mr-auto">
-          <li class="nav-item active ml-lg-2 ml-auto mr-auto">
-            <a class="nav-link nav-font" href="#">THE HOTEL<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item ml-lg-2 ml-auto mr-auto">
-            <a class="nav-link nav-font" href="#">ABOUT</a>
-          </li>
-          <li class="nav-item ml-lg-2 ml-auto mr-auto">
-            <a class="nav-link nav-font" href="#">ACCOMODATION</a>
-          </li>
-          <li class="nav-item ml-lg-2 ml-auto mr-auto">
-            <a class="nav-link nav-font" href="#">SPECIAL OFFERS</a>
-          </li>
-          <li class="nav-item ml-lg-2 ml-auto mr-auto">
-            <a class="nav-link nav-font" href="#">BLOG</a>
-          </li>
-          <li class="nav-item ml-lg-2 ml-auto mr-auto">
-            <a class="nav-link nav-font" href="#">CONTACT US</a>
-          </li>
-          <li class="nav-item ml-lg-2 ml-auto mr-auto">
-            <a class="nav-link nav-font" href="#"><img src="./img/icons8-hot-line-24.png" alt="phone number"> +234 805 678 9000</a>
-          </li>
-        </ul>
+    <!-- MAIN -->
+    <div class="header">
+      <div class="header-filter">
+        <div class="header-content">
+          <h1 class="header-main">Rooms and Rates</h1>
+          <p class="header-subtext">Below are our rooms, Start booking</p>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- Navbar ends here -->
-
-  <!-- MAIN -->
-
-  <!-- FOOTER -->
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 my-md-3 my-2 text-center">
-          <h5>NEWS AND OFFERS</h5>
-        </div>
-        <div class="col-md-4">
-          <form>
-            <div class="form-row align-items-center">
-              <div class="col-8 my-md-3 my-1 form-email-input">
-                <label class="sr-only" for="inlineFormInputName">Name</label>
-                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Your Email Address">
-              </div>
-              <div class="col-4 my-md-3 my-1 ml-auto">
-                <button type="submit" class="btn btn-primary" id="btn-subscribe">Subscribe</button>
+    <div class="main-content">
+      <div class="room-grid">
+        <div class="rooms1">
+          <a href="#">
+            <div class="room-img1">
+              <div class="book">
+                <div class="book-content">Book Now</div>
               </div>
             </div>
-          </form>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-md-3 my-md-3 my-1">
-          <p>KEEP IN TOUCH</p>
+        <div class="rooms2">
+          <a href="#">
+            <div class="room-img2">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-md-3 my-md-3 my-1 logos">
-          <ul class="list-group list-group-horizontal">
-            <i><a href="www.facebook.com" target="_blank"><img src="./img/icons8-facebook-f.svg" alt="facebook logo"></a> </i>
-            <i><a href="www.instagram.com"><img src="./img/icons8-instagram.svg" alt="instagram logo"></a> </i>
-            <i><a href="www.twitter.com"><img src="./img/icons8-twitter.svg" alt="twitter logo"></a></i>
-            <i><a href="www.linkedin.com"><img src="./img/icons8-linkedin.svg" alt="linkedin logo"></a></i>
-            <i><a href="www.youtube.com"><img src="./img/icons8-play-button.svg" alt="youtube logo"></a></i>
-            <!-- <i><a href="www.facebook.com"><img src="./img/icons8-facebook-messenger.svg" alt="facebook messenger logo"></a></i> -->
-
-          </ul>
+        <div class="rooms3">
+          <a href="#">
+            <div class="room-img3">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="rooms4">
+          <a href="#">
+            <div class="room-img4">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="rooms5">
+          <a href="#">
+            <div class="room-img5">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="rooms6">
+          <a href="#">
+            <div class="room-img6">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="rooms7">
+          <a href="#">
+            <div class="room-img7">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="rooms8">
+          <a href="#">
+            <div class="room-img8">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="rooms9">
+          <a href="#">
+            <div class="room-img9">
+              <div class="book">
+                <div class="book-content">Book Now</div>
+              </div>
+            </div>
+          </a>
+          <div class="room-content">
+            <div class="room-spec">
+              <h4 class="room-name">Deluxe Room</h4>
+              <p class="room-width">58m wide</p>
+              <p class="room-type">Single bed type</p>
+            </div>
+            <div class="room-price">
+              <p class="price-fig">&dollar;450.00</p>
+            </div>
+          </div>
         </div>
       </div>
-      <hr class="footer-hr" />
-      <div class="row">
-        <div class="col-md-3 col-6 mb-3 ml-auto mr-auto">
-          <img src="./img/pinofooterlogo.png" alt="footer logo">
-        </div>
-        <div class="col-md-3 mb-3">
-          <p id="address">Plot 32, Jogunomi street, PMB 22113 <br>Gbagada, Lagos <br>+234 805 678 9000 <br>reservations@pinahotels.com </p>
-        </div>
-        <div class="col-md-3 col-6">
-          <p><strong>PAGE SITE</strong></p>
-          <ul>
-            <li><a href="">Terms & Conditions</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Accomodation</a></li>
-            <li><a href="">Dining</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <p><strong>HOT LINKS</strong></p>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Our Vision & Mision</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Our Values</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr class="footer-hr" />
-      <div class="row">
-        <div class="col-6 text-center ml-auto mr-auto mb-3">
-          <p>Copyright (c) 2020 Pino Hotels</p>
-        </div>
-      </div>
-
+      <button class="more">See More</button>
     </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-</body>
 
+    <!-- FOOTER -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 my-md-3 my-2 text-center">
+            <h5>NEWS AND OFFERS</h5>
+          </div>
+          <div class="col-md-4">
+            <form>
+              <div class="form-row align-items-center">
+                <div class="col-8 my-md-3 my-1 form-email-input">
+                  <label class="sr-only" for="inlineFormInputName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputName"
+                    placeholder="Your Email Address"
+                  />
+                </div>
+                <div class="col-4 my-md-3 my-1 ml-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    id="btn-subscribe"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-6 col-md-3 my-md-3 my-1">
+            <p>KEEP IN TOUCH</p>
+          </div>
+          <div class="col-6 col-md-3 my-md-3 my-1 logos">
+            <ul class="list-group list-group-horizontal">
+              <i
+                ><a href="www.facebook.com" target="_blank"
+                  ><img src="./img/icons8-facebook-f.svg" alt="facebook logo"
+                /></a>
+              </i>
+              <i
+                ><a href="www.instagram.com"
+                  ><img src="./img/icons8-instagram.svg" alt="instagram logo"
+                /></a>
+              </i>
+              <i
+                ><a href="www.twitter.com"
+                  ><img src="./img/icons8-twitter.svg" alt="twitter logo" /></a
+              ></i>
+              <i
+                ><a href="www.linkedin.com"
+                  ><img
+                    src="./img/icons8-linkedin.svg"
+                    alt="linkedin logo" /></a
+              ></i>
+              <i
+                ><a href="www.youtube.com"
+                  ><img
+                    src="./img/icons8-play-button.svg"
+                    alt="youtube logo" /></a
+              ></i>
+              <!-- <i><a href="www.facebook.com"><img src="./img/icons8-facebook-messenger.svg" alt="facebook messenger logo"></a></i> -->
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <div class="row">
+          <div class="col-md-3 col-6 mb-3 ml-auto mr-auto">
+            <img src="./img/pinofooterlogo.png" alt="footer logo" />
+          </div>
+          <div class="col-md-3 mb-3">
+            <p id="address">
+              Plot 32, Jogunomi street, PMB 22113 <br />Gbagada, Lagos
+              <br />+234 805 678 9000 <br />reservations@pinahotels.com
+            </p>
+          </div>
+          <div class="col-md-3 col-6">
+            <p><strong>PAGE SITE</strong></p>
+            <ul>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Accomodation</a></li>
+              <li><a href="">Dining</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <p><strong>HOT LINKS</strong></p>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Our Vision & Mision</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Our Values</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <div class="row">
+          <div class="col-6 text-center ml-auto mr-auto mb-3">
+            <p>Copyright (c) 2020 Pino Hotels</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
