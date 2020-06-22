@@ -1,0 +1,33 @@
+
+.banner-container {
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100vw;
+}
+.banner { grid-template-columns: repeat(5, 1fr);
+    /* margin: auto; */
+}
+.font-size-1 { font-size: 1rem; padding: 1rem .75rems; }
+
+.icons {
+    color: inherit;
+    font-size: 3rem;
+}
+.card{
+    height: 400px;
+    position: relative;
+}
+.card .center {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(34, 29, 31, 0.9);
+    color: #fff;
+    width: 100%;
+}
+.card .center h1 {
+    font-size: 1.5rem;
+}
