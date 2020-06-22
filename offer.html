@@ -17,16 +17,457 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    
+    <!-- Font Awesome 4.7.0 -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Exernal CSS -->
     <link rel="stylesheet" href="./css/offer.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- EDIT HEADER HERE -->
+    <!-- HEADER -->
+    <!-- Navbar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container py-md-3">
+        <a class="navbar-brand" href="#"><img src="./img/pinoHotels.png" alt="" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav-item active ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="index.html">THE HOTEL<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="accommodation.html">ACCOMODATION</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#">SPECIAL OFFERS</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="contact.html">CONTACT US</a>
+            </li>
+            <li class="nav-item ml-lg-2 ml-auto mr-auto">
+              <a class="nav-link nav-font" href="#"><img src="./img/icons8-hot-line-24.png" alt="phone number"> +234 805 678 9000</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
+
     
     <!-- MAIN -->
-    
-    <!-- EDIT FOOTER HERE -->
+    <header>
+        <div class="text-center pad">
+          <hgroup>
+            <h1>SPECIAL OFFERS</h1>
+            <h3 class="fx-size fx-top">FEATURED: 30% OFF - SELECT GUEST &reg; EXCLUSIVE</h3>
+          </hgroup>
+          <div class="fx-bold fx-top">
+            <span>
+              When the time is right to plan your summer vacation, enjoy 30% off your stay at one of our luxurious hotels and resorts across the country.
+            </span>
+          </div>
+          
+          <!-- Buttons To Apply For Offer -->
+          <div class="fx-top">
+            <span class="fx-bot">
+              <a class="fx-btn" href="#">OFFER DETAILS</a>
+            </span>
+            <span class="fx-bot">
+              <a class="fx-btn" href="#">APPLY OFFER</a>
+            </span>
+          </div>
+          <!-- /Buttons To Apply For Offer -->
+        </div>
+        
+      <!-- Positioned Absolute For The Arrival and Delivery Button (Desktop Screen) -->
+        <div class="dd"></div>
+          <div class="w-75 fx-fix d-none d-lg-block">
+            <span class="bx-btn rounded point">Arrival Date <i class="fa fa-calendar"></i></span>
+            <span class="bx-btn rounded point">Delivery Date <i class="fa fa-calendar"></i></span>
+            
+            <span class="dropdown">
+              <span class="bx-btn rounded point" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adult <i class="fa fa-chevron-down"></i> </span>
+              <!-- Dropdown for amount of Adults -->
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <input type="number" class="w-100" max="5" min="1" value="1">
+              </div>
+            </span>
+            
+            <span class="dropdown">
+              <span class="bx-btn rounded point" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Children <i class="fa fa-chevron-down"></i> </span>
+              <!-- Dropdown for amount of Children -->
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <input type="number" class="w-100" max="12" min="0" value="0">
+              </div>
+            </span>
+            
+            <span class="dropdown">
+              <span class="bx-btn rounded point fx-color" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Check Availability <i class="fa fa-chevron-down"></i> </span>
+              <!-- Dropdown for Availablity -->
+              <div class="dropdown-menu fx-color" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item fx-color" href="#">Available <input type="checkbox" checked></a>
+                <a class="dropdown-item fx-color" href="#">Unavailable <input type="checkbox"></a>
+              </div>
+            </span>
+          </div>
+      
+          <!-- Positioned Absolute For The Arrival and Delivery Button (Mobile Screen) -->
+          <div class="w-75 fx-fix d-lg-none text-center">
+            <span class="bx-btn rounded point fx-color">Arrival Date <i class="fa fa-chevron-down"></i></span>
+            <span class="bx-btn rounded point fx-color">Delivery Date <i class="fa fa-chevron-down"></i></span>
+            <div class="h-20 d-md-none d-lg-block"></div>
+            
+            <span class="dropdown">
+              <span class="bx-btn rounded point fx-color" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Occupant <i class="fa fa-chevron-down"></i> </span>
+              <!-- Dropdown for amount of Occupants -->
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <input type="number" class="w-100 fx-color" max="12" min="2">
+              </div>
+            </span>
+            <span class="bx-btn rounded point fx-color">BOOK NOW</span>
+          </div>
+      </header>
+    <!-- Special Offer Page Main Content -->
+      <main class="w-85 mr-auto ml-auto">
+        <div class="text-center fx-top">
+          <h1>Special Offers</h1>
+        </div>
+        <div class="justify-content text-center fx-word">
+          Ready to get away? Whether you are looking for the perfect golf outing, a spa escape, world-class shopping or to simply tour the sights of your favorite city, we can help you book the perfect trip.
+        </div>
+        <div class="fx-locate fx-word fx-top">
+          <span class="fx-h3">Filter Offers</span>
+          <span class="fx-pad dropdown">
+            <span class="t-1 point" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Location <i class="fa fa-chevron-down"></i></span>
+            <!-- Dropdown for Different Locations -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Lagos</a>
+              <a class="dropdown-item" href="#">Abuja</a>
+              <a class="dropdown-item" href="#">Benin</a>
+              <a class="dropdown-item" href="#">Ogun state</a>
+              <a class="dropdown-item" href="#">Kaduna</a>
+              <a class="dropdown-item" href="#">Ibadan</a>
+            </div>
+          </span>
+          <div class="h-20 d-md-none"></div>
+          <span class="fx-pad dropdown">
+            <span class="t-1 point" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Date <i class="fa fa-chevron-down"></i></span>
+            <!-- Dropdown for Different Date Duration -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Sept 5, 2020 - Nov 21, 2020</a>
+              <a class="dropdown-item" href="#">Jan 7, 2021 - June 27, 2021</a>
+              <a class="dropdown-item" href="#">Aug 2, 2021 - Oct 30, 2021</a>
+            </div>
+          </span>
+        </div>
+        
+        <!-- The Exclusive Offer - First Section -->
+        <section class="bx-top rounded bx-border" id="section-1">
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="./img/offer/image 6.png" alt="Exclusive set" width="100%">
+            </div>
+            <div class="flex-item fx-word padding">
+              <h4>30% OFF - SELECT GUEST &reg; EXCLUSIVE</h4>
+              <div class="fx-top">
+                When the time is right to plan your summer vacation, enjoy 30% off your stay at one of our luxurious hotels and resorts across the country.
+              </div>
+              <div class="fx-top"><span class="fx-h4">Stay Dates</span> : Stay through Sep 12, 2020</div>
+              <div class="fx-top"><span class="fx-h4">Book By</span> : Sep 5, 2020</div>
+              <div class="bx-top text-center">
+                <span class="fx-bot">
+                  <a class="fx-btn rounded" href="#">OFFER DETAILS</a>
+                </span>
+                
+                <!-- Needed to break line at small screen -->
+                <br class="d-block d-sm-none">
+                <br class="d-block d-sm-none">
+                <!-- /Needed to break line at small screen -->
+                
+                <span class="fx-bot">
+                  <a class="fx-btn rounded fx-color" href="#">APPLY OFFER</a>
+                </span>
+              </div>
+              <!-- Additonal Height -->
+              <div class="h-20"></div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Other Offers -->
+        
+        <!-- Second Section -->
+        <section class="bx-top rounded bx-border">
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="./img/offer/image 2.png" alt="Exclusive set" width="100%">
+            </div>
+            <div class="flex-item fx-word padding">
+              <h4>ESCAPE AND SAVE</h4>
+              <div class="fx-top">
+                One night at Omni just isn't enough, take 15% off when you stay two nights or more. Go ahead and get away—you've earned it.
+              </div>
+              <div class="fx-top"><span class="fx-h4">Stay Dates</span> : Stay through Nov 12, 2020</div>
+              <div class="fx-top"><span class="fx-h4">Book By</span> : Sep 5, 2020</div>
+              <div class="bx-top text-center">
+                <span class="fx-bot">
+                  <a class="fx-btn rounded" href="#">OFFER DETAILS</a>
+                </span>
+                
+                <!-- Needed to break line at small screen -->
+                <br class="d-block d-sm-none">
+                <br class="d-block d-sm-none">
+                <!-- /Needed to break line at small screen -->
+                
+                <span class="fx-bot">
+                  <a class="fx-btn rounded fx-color" href="#">APPLY OFFER</a>
+                </span>
+              </div>
+              <!-- Additonal Height -->
+              <div class="h-20"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /Second Section -->
+        
+        <!-- Third Section -->
+        <section class="bx-top rounded bx-border">
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="./img/offer/image 4.png" alt="Exclusive set" width="100%">
+            </div>
+            <div class="flex-item fx-word padding">
+              <h4>ADVANCE PURCHASE RATES</h4>
+              <div class="fx-top">
+                Enjoy up to 20% off when you stay at one of our luxurious hotels and resorts across the country.
+              </div>
+              <div class="fx-top"><span class="fx-h4">Stay Dates</span> : Stay through Nov 12, 2020</div>
+              <div class="fx-top"><span class="fx-h4">Book By</span> : Sep 5, 2020</div>
+              <div class="bx-top text-center">
+                <span class="fx-bot">
+                  <a class="fx-btn rounded" href="#">OFFER DETAILS</a>
+                </span>
+                
+                <!-- Needed to break line at small screen -->
+                <br class="d-block d-sm-none">
+                <br class="d-block d-sm-none">
+                <!-- /Needed to break line at small screen -->
+                
+                <span class="fx-bot">
+                  <a class="fx-btn rounded fx-color" href="#">APPLY OFFER</a>
+                </span>
+              </div>
+              <!-- Additonal Height -->
+              <div class="h-20"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /Third Section -->
+        
+        <!-- Fourth Section -->
+        <section class="bx-top rounded bx-border">
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="./img/offer/image 5.png" alt="Exclusive set" width="100%">
+            </div>
+            <div class="flex-item fx-word padding">
+              <h4>BED AND BREAKFAST</h4>
+              <div class="fx-top">
+                Experience luxurious accommodations, and we will treat you to breakfast each morning.
+              </div>
+              <div class="fx-top"><span class="fx-h4">Stay Dates</span> : Stay through Nov 12, 2020</div>
+              <div class="fx-top"><span class="fx-h4">Book By</span> : Sep 5, 2020</div>
+              <div class="bx-top text-center">
+                <span class="fx-bot">
+                  <a class="fx-btn rounded" href="#">OFFER DETAILS</a>
+                </span>
+                
+                <!-- Needed to break line at small screen -->
+                <br class="d-block d-sm-none">
+                <br class="d-block d-sm-none">
+                <!-- /Needed to break line at small screen -->
+                
+                <span class="fx-bot">
+                  <a class="fx-btn rounded fx-color" href="#">APPLY OFFER</a>
+                </span>
+              </div>
+              <!-- Additonal Height -->
+              <div class="h-20"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /Fourth Section -->
+        
+        <!-- Fifth Section -->
+        <section class="bx-top rounded bx-border">
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="./img/offer/image 3.png" alt="Exclusive set" width="100%">
+            </div>
+            <div class="flex-item fx-word padding">
+              <h4>ROMANCE</h4>
+              <div class="fx-top">
+                Experience love and luxury at Omni Hotels &amp; Resorts. Enjoy two mini bottles of Moet &amp; Chandon Rosé Champagne.
+              </div>
+              <div class="fx-top"><span class="fx-h4">Stay Dates</span> : Stay through Nov 12, 2020</div>
+              <div class="fx-top"><span class="fx-h4">Book By</span> : Sep 5, 2020</div>
+              <div class="bx-top text-center">
+                <span class="fx-bot">
+                  <a class="fx-btn rounded" href="#">OFFER DETAILS</a>
+                </span>
+                
+                <!-- Needed to break line at small screen -->
+                <br class="d-block d-sm-none">
+                <br class="d-block d-sm-none">
+                <!-- /Needed to break line at small screen -->
+                
+                <span class="fx-bot">
+                  <a class="fx-btn rounded fx-color" href="#">APPLY OFFER</a>
+                </span>
+              </div>
+              <!-- Additonal Height -->
+              <div class="h-20"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /Fifth Section -->
+        
+        <!-- Sixth Section -->
+        <section class="bx-top rounded bx-border">
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="./img/offer/image 1.png" alt="Exclusive set" width="100%">
+            </div>
+            <div class="flex-item fx-word padding">
+              <h4>PGA TOUR GOLF PACKAGE</h4>
+              <div class="fx-top">
+                As the proud Official Hotel Partner of the PGA TOUR®, Omni Hotels &amp; Resorts is excited to offer an exclusive golf package.
+              </div>
+              <div class="fx-top"><span class="fx-h4">Stay Dates</span> : Stay through Nov 12, 2020</div>
+              <div class="fx-top"><span class="fx-h4">Book By</span> : Sep 5, 2020</div>
+              <div class="bx-top text-center">
+                <span class="fx-bot">
+                  <a class="fx-btn rounded" href="#">OFFER DETAILS</a>
+                </span>
+                
+                <!-- Needed to break line at small screen -->
+                <br class="d-block d-sm-none">
+                <br class="d-block d-sm-none">
+                <!-- /Needed to break line at small screen -->
+                
+                <span class="fx-bot">
+                  <a class="fx-btn rounded fx-color" href="#">APPLY OFFER</a>
+                </span>
+              </div>
+              <!-- Additonal Height -->
+              <div class="h-20"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /Sixth Section -->
+        
+        <div class="d-none d-sm-block bx-top text-center">
+          <span class="fx-bot">
+            <a class="fx-btn rounded fx-color" href="#">Load More</a>
+          </span>
+          <span class="fx-bot">
+            <a class="fx-btn rounded fx-color" href="#section-1">Back to the top</a>
+          </span>
+        </div>
+        <div class="bx-top float-right d-block d-sm-none">
+          <span class="point fx-word">View more <i class="fa fa-arrow-right"></i></span>
+        </div>
+        <!-- A margin to separate Footer from Main --> 
+        <div class="bx-top">
+        </div>
+      </main>
+        <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 my-md-3 my-2 text-center">
+              <h5>NEWS AND OFFERS</h5>
+            </div>
+            <div class="col-md-4">
+              <form>
+                <div class="form-row align-items-center">
+                  <div class="col-8 my-md-3 my-1 form-email-input">
+                    <label class="sr-only" for="inlineFormInputName">Name</label>
+                    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Your Email Address">
+                  </div>
+                  <div class="col-4 my-md-3 my-1 ml-auto">
+                    <button type="submit" class="btn btn-primary" id="btn-subscribe">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-6 col-md-3 my-md-3 my-1">
+              <p>KEEP IN TOUCH</p>
+            </div>
+            <div class="col-6 col-md-3 my-md-3 my-1 logos">
+              <ul class="list-group list-group-horizontal">
+                <i><a href="www.facebook.com" target="_blank"><img src="./img/icons8-facebook-f.svg" alt="facebook logo"></a> </i>
+                <i><a href="www.instagram.com"><img src="./img/icons8-instagram.svg" alt="instagram logo"></a> </i>
+                <i><a href="www.twitter.com"><img src="./img/icons8-twitter.svg" alt="twitter logo"></a></i>
+                <i><a href="www.linkedin.com"><img src="./img/icons8-linkedin.svg" alt="linkedin logo"></a></i>
+                <i><a href="www.youtube.com"><img src="./img/icons8-play-button.svg" alt="youtube logo"></a></i>
+                <!-- <i><a href="www.facebook.com"><img src="./img/icons8-facebook-messenger.svg" alt="facebook messenger logo"></a></i> -->
+
+              </ul>
+            </div>
+          </div>
+          <hr class="footer-hr" />
+          <div class="row">
+            <div class="col-md-3 col-6 mb-3 ml-auto mr-auto">
+              <img src="./img/pinofooterlogo.png" alt="footer logo">
+            </div>
+            <div class="col-md-3 mb-3">
+              <p id="address">Plot 32, Jogunomi street, PMB 22113 <br>Gbagada, Lagos <br>+234 805 678 9000 <br>reservations@pinahotels.com </p>
+            </div>
+            <div class="col-md-3 col-6">
+              <p><strong>PAGE SITE</strong></p>
+              <ul>
+                <li><a href="">Terms &amp; Conditions</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Accomodation</a></li>
+                <li><a href="">Dining</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-6">
+              <p><strong>HOT LINKS</strong></p>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Our Vision &amp; Mision</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Our Values</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="footer-hr" />
+          <div class="row">
+            <div class="col-6 text-center ml-auto mr-auto mb-3">
+              <p>Copyright (c) 2020 Pino Hotels</p>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
