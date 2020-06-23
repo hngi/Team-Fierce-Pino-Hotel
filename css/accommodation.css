@@ -1,3 +1,5 @@
+/************** GENERAL ***************/
+
 body,p,h1,h2,h3,h4,div{
     margin: 0;
     padding: 0;
@@ -6,7 +8,9 @@ body,p,h1,h2,h3,h4,div{
 a,a:hover{
     text-decoration: none;
 }
-/* HEAD */
+
+
+/***************************** Main Header ****************/
 .header{
     background: url(/img/accommodation/deluxe-platinum-room-hard-rock-hotel-cancun\ 1.png);
     background-size: cover;
@@ -33,7 +37,7 @@ a,a:hover{
     font-size: 2rem;
 }
 
-/* MAIN CONTENT */
+/************************** MAIN CONTENT **********************/
 .main-content{
     background: url(/img/accommodation/Rectangle\ 77.png);
     background-size: 118% 100%;
@@ -44,71 +48,19 @@ a,a:hover{
     padding-bottom: 70px;
     margin-bottom: 30px;
 }
+
+/* ROOMS */
 .room-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     grid-gap: 75px;
     padding:110px 70px 90px;
-    position: relative;
 }
 .rooms{
     border-radius: 10px;
     background: #FFFFFF;
     box-shadow: 0px 4px 26px rgba(49, 58, 89, 0.2);
-}
-.room-img{
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-}
-/* .room-img1,.room-img2,.room-img3,.room-img4,.room-img5,.room-img6,.room-img7,.room-img8,.room-img9 */
-.room-img1,.room-img4,.room-img7{
-    background: url(/img/accommodation/1:1.png);
-    background-size: 100.3%;
-    background-repeat: no-repeat;
-}
-.room-img2,.room-img5,.room-img8{
-    background: url(/img/accommodation/1:2.png);
-    background-size: 100.3%;
-    background-repeat: no-repeat;
-}
-.room-img3,.room-img6,.room-img9{
-    background: url(/img/accommodation/1:3.png);
-    background-size: 100.3%;
-    background-repeat: no-repeat;
-}
-.room-img:hover .book{
-    visibility: visible;
-}
-.room-img1:hover,.room-img4:hover,.room-img7:hover{
-    background: url(/img/accommodation/1:1.png) rgba(0, 0, 0, 0.45);
-    background-blend-mode: multiply;
-    background-size:cover;
-}
-.room-img2:hover,.room-img5:hover,.room-img8:hover{
-    background: url(/img/accommodation/1:2.png) rgba(0, 0, 0, 0.45);
-    background-blend-mode: multiply;
-    background-size:cover;
-}
-.room-img3:hover,.room-img6:hover,.room-img9:hover{
-    background: url(/img/accommodation/1:3.png) rgba(0, 0, 0, 0.45);
-    background-blend-mode: multiply;
-    background-size:cover;
-}
-.book{
-    margin: auto;
-    width: 50%;
-    padding: 55% 0 9.4%;
-    text-align: center;
-    visibility: hidden;
-}
-.book-content{
-    color: white;
-    background: #262F56;
-    border-radius: 10px;
-    padding: 10%;
-    font-size: 22px;
-    font-weight: 500px;
 }
 .room-content{
     padding: 25px;
@@ -130,14 +82,66 @@ a,a:hover{
     font-size: 1.125rem;
     font-weight: normal;
 }
-/* .break{
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-    grid-gap: 75px;
-    
-} */
+
+/* Room Images Section */
+.room-img{
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+.room-img1,.room-img4,.room-img7{
+    background: url(/img/accommodation/1:1.png);
+    background-size: 100.3%;
+    background-repeat: no-repeat;
+}
+.room-img2,.room-img5,.room-img8{
+    background: url(/img/accommodation/1:2.png);
+    background-size: 100.3%;
+    background-repeat: no-repeat;
+}
+.room-img3,.room-img6,.room-img9{
+    background: url(/img/accommodation/1:3.png);
+    background-size: 100.3%;
+    background-repeat: no-repeat;
+}
+
+/* ROOM HOVER STATES */
+.room-img:hover .book{
+    visibility: visible;
+}
+.room-img1:hover,.room-img4:hover,.room-img7:hover{
+    background: url(/img/accommodation/1:1.png) rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    background-size:cover;
+}
+.room-img2:hover,.room-img5:hover,.room-img8:hover{
+    background: url(/img/accommodation/1:2.png) rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    background-size:cover;
+}
+.room-img3:hover,.room-img6:hover,.room-img9:hover{
+    background: url(/img/accommodation/1:3.png) rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    background-size:cover;
+}
+
+/* BOOK ROOM */
+.book{
+    margin: auto;
+    width: 50%;
+    padding: 55% 0 9.4%;
+    text-align: center;
+    visibility: hidden;
+}
+.book-content{
+    color: white;
+    background: #262F56;
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 22px;
+    font-weight: 500px;
+}
+
+/* SEE MORE */
 .more{
     background: #262F56;
     border-radius: 10px;
@@ -148,9 +152,12 @@ a,a:hover{
 .more:focus{
     outline: none;
 }
+
+/* MEDIA QUERY1: Prevents bootstrap "collapse" class from opearting at this media query (i.e literally hidden content isn't hidden at this screen-width.) */
 @media screen and (min-width:1002px){
+
+    /* Collapse Section */
     #filters{
-        /* display: block; */
         grid-auto-rows: auto;
         grid-column: 1/4;
         display: grid;
@@ -158,38 +165,73 @@ a,a:hover{
         grid-gap: 75px;
     }
 }
+
+/* MEDIA QUERY2: better display of elements at screen widths */
 @media screen and (max-width:1001px){
+
+    /* Main Header */
     .header{
         position: static;
+    }
+    .header-main{
+        font-size: 2.3221125rem;
     }
     .main-content{
         background-size: 100% 100%;
         background-position: top;
         padding-top:0;
     }
+
+    /* Room */
     .room-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
+        grid-gap: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
+
+    /* Collapse Section */
     .break{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
-        grid-gap: 75px;
+        grid-gap: 30px;
         grid-column: 1/3;
     }
 }
+
+/* Mobile Screen-width */
 @media screen and (max-width:767px){
+
+    /* Main Header */
     .header-main{
-        font-size: 2.3221125rem;
+        font-size: 1.5rem;
     }
     .header-subtext{
-        font-size: 1.076925rem;
+        font-size: 0.8rem;
     }
+
+    /* Room */
     .room-name, .book-content{
         font-size:  1rem;
     }
     .room-width,.room-type,.price-fig{
         font-size: 0.9rem;
+    }
+    .room-grid{
+        grid-gap: 10px;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-top: 50px;
+    }
+    .room-content{
+        line-height: 30px;
+        padding: 15px;
+    }
+
+    /* See More */
+    .more{
+        padding: 1rem 2rem;
     }
 }
