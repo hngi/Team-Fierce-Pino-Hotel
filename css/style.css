@@ -1,0 +1,173 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    background: #E5E5E5;
+}
+.logo{
+    width: 50%;
+}
+.navbar-nav{
+    font-size: 16px;
+    
+}
+
+/* header start */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/headerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 90vh;
+}
+.header-info{
+    margin-top: 40%;
+}
+
+.header-info h1{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header-hr{
+    background-color: white;
+    width: 70%;
+}
+.slogan{
+    font-size: 16px;
+}
+.appeal{
+    display: none;
+    font-size: 16px;
+}
+/* header end */
+/* footer starts */
+footer{
+    background: #1F232B;
+    color: white;
+}
+
+#inlineFormInputName{
+    height: 1.6rem;
+    font-size: 0.6rem;
+    background-color: transparent;
+    border-color: #262F56;
+
+}
+
+#btn-subscribe{
+    font-size: 0.6rem;
+    background: #262F56;
+    border-color: #262F56;
+    width: 100%;
+    transition: all .4s ease;
+}
+
+#btn-subscribe:hover{
+    
+    background: white;
+    border-color: #262F56;
+    color: #262F56;
+    font-size: bold;
+    
+}
+#footer-in-touch{
+    margin-right: 0rem;
+}
+.footer-hr{
+    background-color: white;
+    margin: 0px;
+    margin-bottom: 0.5rem;
+}
+footer h5{
+    font-size: 14px;
+}
+footer p{
+    font-size: 14px;
+    margin-block-end: 0rem;
+    margin-bottom: 0rem;
+    line-height: 20px;
+}
+#address{
+    font-size: 11px;
+}
+
+.logos{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.logos ul li:hover{
+    transform: scaleY(1.5);
+}
+ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+/* footer ends */
+
+@media all and (min-width: 700px){
+    .logo{
+        width: 80%;
+    }
+    .header-info{
+        margin-top: 15%;
+    }
+    .header-info h1{
+        font-size: 66px;
+    }
+    .appeal{
+        display: block;
+        margin-top: 8%;
+    }
+    .form-email-input{
+        width: 100%;
+    }
+    .form-control {
+        width: 100%;
+    }
+    #btn-subscribe{
+        width: 127%;
+    }
+    ul li a{
+        font-size: 12px;
+    }
+}
+
+@media all and (min-width: 992px){
+    .nav-font{
+        font-size: 14px;
+    }
+    #btn-subscribe{
+        width: 100%;
+    }
+    ul li a{
+        font-size: 16px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .25rem;
+        padding-left: .5rem;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .nav-font{
+        font-size: 16px;
+    }
+    .slogan{
+        font-size: 18px;
+    }
+    .appeal{
+        font-size: 18px;
+    }
+    #address{
+        font-size: 11px;
+    }
+}
