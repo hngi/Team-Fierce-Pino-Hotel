@@ -35,7 +35,7 @@ a,a:hover{
 
 /* MAIN CONTENT */
 .main-content{
-    background: url(/img/accommodation/Rectangle\ 77.svg);
+    background: url(/img/accommodation/Rectangle\ 77.png);
     background-size: 118% 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -108,6 +108,14 @@ a,a:hover{
     font-size: 1.125rem;
     font-weight: normal;
 }
+/* .break{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-gap: 75px;
+    
+} */
 .more{
     background: #262F56;
     border-radius: 10px;
@@ -115,19 +123,37 @@ a,a:hover{
     padding: 1.25rem 2.5rem;
     color: #FFFFFF;
 }
-
+.more:focus{
+    outline: none;
+}
+@media screen and (min-width:1002px){
+    #filters{
+        /* display: block; */
+        grid-auto-rows: auto;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 75px;
+    }
+}
 @media screen and (max-width:1001px){
     .header{
         position: static;
     }
     .main-content{
-        background-size: cover;
-        padding-top: 5%;
+        background-size: 100% 100%;
+        background-position: top;
+        padding-top:0;
     }
     .room-grid{
         grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
     }
-    .rooms7,.rooms8,.rooms9{
-        display: none;
+    .break{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 75px;
+        grid-column: 1/3;
     }
 }
